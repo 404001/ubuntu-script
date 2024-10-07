@@ -4,7 +4,7 @@
 sudo apt update && sudo apt upgrade -y
 
 # Install essential programs
-sudo apt install -y git curl wget kitty gnome-tweaks gnome-shell-extensions dconf-cli
+sudo apt install -y git curl wget ipcalc kitty gnome-tweaks gnome-shell-extensions dconf-cli
 
 # Set Kitty as the default terminal
 sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
@@ -16,9 +16,9 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 
 # Set the wallpaper from a GitHub URL
-WALLPAPER_URL="https://github.com/usuario/repo/raw/main/wallpaper.jpg"
-wget -O ~/wallpaper.jpg $WALLPAPER_URL
-gsettings set org.gnome.desktop.background picture-uri "file:///$HOME/wallpaper.jpg"
+WALLPAPER_URL="https://github.com/404001/ubuntu-script/blob/main/background.png?raw=true"
+wget -O ~/background.png $WALLPAPER_URL
+gsettings set org.gnome.desktop.background picture-uri "file:///$HOME/background.png"
 
 # Optional: Change terminal colors (Kitty config)
 KITTY_CONFIG_DIR="$HOME/.config/kitty"
