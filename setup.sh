@@ -30,6 +30,8 @@ selection_background #4c7899
 cursor #d0d0d0
 EOL
 
+kitty +kitten themes wez
+
 # Reboot to apply changes
 echo "The system will reboot in 5 seconds to apply changes..."
 sleep 5
