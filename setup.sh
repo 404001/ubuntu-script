@@ -9,6 +9,10 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
+
+gsettings set org.gnome.desktop.background show-desktop-icons false
+
 
 WALLPAPER_URL="https://github.com/404001/ubuntu-script/blob/main/background.png?raw=true"
 wget -O ~/background.png $WALLPAPER_URL
