@@ -2,7 +2,7 @@
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install -y git curl wget ipcalc kitty gnome-tweaks gnome-shell-extensions dconf-cli
+sudo apt install -y git curl wget ipcalc htop kitty gnome-tweaks gnome-shell-extensions dconf-cli
 
 sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
 
