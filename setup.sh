@@ -5,6 +5,9 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install -y git curl wget ipcalc htop kitty gnome-tweaks gnome-shell-extensions dconf-cli neofetch gnome-shell-extension-tool unzip
 
+# Gnome extension manager
+sudo apt install -y gnome-shell-extension-manager
+
 # Cambiar el emulador de terminal predeterminado a kitty
 sudo update-alternatives --set x-terminal-emulator /usr/bin/kitty
 
@@ -48,12 +51,7 @@ gnome-extensions enable lan-ip-address@uNmIND
 # Recargar GNOME Shell (solo funciona si usas X11)
 gnome-shell --replace &
 
-# Reiniciar para aplicar los cambios (si es necesario)
-echo "El sistema se reiniciará en 5 segundos para aplicar los cambios..."
-sleep 5
-echo "4"
-sleep 4
-echo "3"
+echo "Reboot in 3"
 sleep 3
 echo "2"
 sleep 2
